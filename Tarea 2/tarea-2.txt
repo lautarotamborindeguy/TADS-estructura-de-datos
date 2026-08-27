@@ -1,0 +1,6 @@
+Desenvolver um algoritmo em linguagem C que gere, armazene e sorteie números primos utilizando arrays e modularização (funções).
+Passo a passo:
+1. Geração: Crie uma função que encontre e guarde os 10.000 primeiros números primos dentro de um array de inteiros.
+2. Sorteio: Crie uma função separada que retorne um número inteiro aleatório entre 0 e 9999. (Dica: pesquisem sobre as funções rand() e srand(time(NULL)) da biblioteca <stdlib.h>).
+3. Seleção: No main, crie um segundo array de inteiros com tamanho 25. Chame a sua função de sorteio 25 vezes. Use os números sorteados como índices para buscar primos no primeiro array e guarde-os neste segundo array.
+4. Exibição: Por fim, use um laço de repetição para imprimir na tela os 25 números primos que foram guardados no segundo array.

@@ -1,0 +1,20 @@
+Exercício 1: Calculadora de Médias Variável
+
+Faça um programa que calcule a média de notas de uma turma. Siga as seguintes instruções. 
+
+Pergunte ao usuário: "Quantos alunos existem na turma?".
+Use o malloc para criar um array de float com o tamanho exato informado.
+Verifique se a alocação funcionou.
+Use um laço de repetição para ler as notas e salvá-las no espaço alocado.
+Calcular a média e exibir na tela.
+Libere a memória após o uso e anule o ponteiro.
+
+
+Exercício 2: Crie um programa que use o malloc para alocação de memória dinâmica, pode ser o que você desejar: um editor de texto, uma playlist de músicas ou outra coisa que você invente. Os requisitos são:
+
+Usar o malloc para alocação de memória dinâmica.
+Pedir dados ao usuário.
+Exibir dados na tela.
+Deixar o usuário escolher se deseja cadastrar mais dados(pesquise e use o realloc para fazer isso).
+Liberar a memória e anular ponteiros após o término da execução.
+Explicar ao professor em aula o funcionamento do seu código. Mostrando o que você entendeu do tema.
