@@ -2,24 +2,24 @@
 #include <stdlib.h>
 #include "estruturas.h"
 
-/* Nó usado na Pilha e na Fila */
+/* Nodo utilizado en la Pila y en la Cola */
 typedef struct no {
     int info;
     struct no* prox;
 } No;
 
-/* Estrutura da Pilha */
+/* Estructura de la Pila */
 struct pilha {
     No* topo;
 };
 
-/* Estrutura da Fila */
+/* Estructura de la Cola */
 struct fila {
     No* inicio;
     No* fim;
 };
 
-/* Nó da Lista Dupla */
+/* Nodo de la Lista Doble */
 typedef struct no_duplo {
     int info;
     struct no_duplo* ant;
@@ -28,7 +28,7 @@ typedef struct no_duplo {
 
 
 /* =========================
-   PILHA
+   PILA
    ========================= */
 
 Pilha* criar_pilha(void) {
@@ -97,7 +97,7 @@ void liberar_pilha(Pilha* p) {
 
 
 /* =========================
-   FILA
+   COLA
    ========================= */
 
 Fila* criar_fila(void) {
@@ -177,7 +177,7 @@ void liberar_fila(Fila* f) {
 
 
 /* =========================
-   LISTA DUPLAMENTE ENCADEADA
+   LISTA DOBLEMENTE ENLAZADA
    ========================= */
 
 void teste_lista_dupla(void) {
@@ -199,12 +199,15 @@ void teste_lista_dupla(void) {
     B->info = 20;
     C->info = 30;
 
+    /* Conexiones del nodo A */
     A->ant = NULL;
     A->prox = B;
 
+    /* Conexiones del nodo B */
     B->ant = A;
     B->prox = C;
 
+    /* Conexiones del nodo C */
     C->ant = B;
     C->prox = NULL;
 
@@ -214,6 +217,7 @@ void teste_lista_dupla(void) {
     printf("Valor de A acessado a partir de C: %d\n",
            C->ant->ant->info);
 
+    /* Liberación de la memoria de los tres nodos */
     free(A);
     free(B);
     free(C);
